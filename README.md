@@ -10,7 +10,7 @@ docker build -t ts .
 ## Slimify
 
 ```shell script
-docker-slim build --http-probe=false --include-path /usr/local/lib/python3.7/site-packages/certifi --show-clogs ts
+docker-slim build --http-probe=false --mount /data:/data --include-path /usr/local/lib/python3.7/site-packages/certifi --show-clogs ts
 ```
 
 ## Test to see what happens
